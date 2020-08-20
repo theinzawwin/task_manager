@@ -1,0 +1,22 @@
+<div>
+    <table>
+        <thead>
+            <tr>
+            <th>No</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Mark</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach($questions as $question)
+                <tr>
+                    <td>{{$loop->iteration}}</td>
+                    <td>{{$question->name}}</td>
+                    <td>{{$question->description}}</td>
+                    <td>{{$question->mark}}</td>
+                </tr>
+            @endforeach
+        </tbody>
+    </table>
+</div>
